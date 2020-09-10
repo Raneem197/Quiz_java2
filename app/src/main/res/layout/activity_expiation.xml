@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Expiation">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </androidx.core.widget.NestedScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp"
+                android:text="Write a program take tow integer  variable , a=5 and b=0 and divide a/b .\n\n Not : test the program if it's run the right way or not  If not ، you need to do something for your code so what you need , think! "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/ansr8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#00828f"
+                android:onClick="ViewAnswe"
+                android:text="Press here to see model answer"
+                android:textColor="#f4f3f3"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/answer_text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#F3F3F3"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:paddingRight="11dp"
+                android:paddingBottom="5dp"
+                android:text="@string/answe8"
+                android:textColor="#090909"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/comp7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#00828f"
+                android:onClick="gotocompiler"
+                android:text="Press here to try to run your code."
+                android:textColor="#f4f3f3"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

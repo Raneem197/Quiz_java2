@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".composition">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="#FFFFFF"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        app:srcCompat="@drawable/img" />
+
+                    <Button
+                        android:id="@+id/ansr3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#00828f"
+                        android:onClick="ViewAnswe"
+                        android:text="Press here to see model answer"
+                        android:textColor="#f4f3f3"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/answer_text3"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="#F3F3F3"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="11dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/answe3"
+                        android:textColor="#090909"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
